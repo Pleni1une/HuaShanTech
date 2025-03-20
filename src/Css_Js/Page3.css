@@ -1,0 +1,16 @@
+.Image1 img {
+    margin-top: 44px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.Image2 img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.Image2 {
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

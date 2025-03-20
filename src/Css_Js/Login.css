@@ -1,0 +1,41 @@
+.Image1 img {
+    margin-top: 30%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    width: 15%;
+}
+
+.main {
+    height: 200px;
+    width: 90%;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+input {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    width: 84%;
+    height: auto;
+    border: 1px solid #CCCCCC;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #205AA3;
+    border-radius: 3px;
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 25px;
+    font-size: 30px;
+    color: white;
+}

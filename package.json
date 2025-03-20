@@ -1,0 +1,24 @@
+{
+    "name": "huashan",
+    "version": "1.0.0",
+    "description": "byZYuan",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "electron-builder --win --x64"
+    },
+    "author": "ZYuan",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^35.0.1",
+        "electron-builder": "^25.1.8"
+    },
+    "build": {
+        "appId": "com.huashan.app",
+        "win": {
+            "icon": "./icon.ico",
+            "target": ["portable"]
+        }
+    }
+}

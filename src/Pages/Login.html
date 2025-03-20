@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <title>华杉科技实训周</title>
+    <link rel="shortcut icon" href="../Resource/icon.png">
+    <link rel="stylesheet" href="../Css_Js/Login.css">
+    <link rel="stylesheet" href="../Css_Js/Header_And_Footer.css">
+
+</head>
+
+<body>
+    <div class="PageHeader">
+        登录
+    </div>
+    <div class="Image1">
+        <img src="../Resource/head.png">
+    </div>
+
+    <div class="main">
+        <input type="text" placeholder="账号:" id="account">
+        <input type="password" placeholder="密码:" id="password">
+        <button id="login">登录</button>
+    </div>
+
+    <script>
+        //TODO
+        //本地校验     
+        function CheckInput() {
+
+            var account = document.getElementById("account").value;
+            var password = document.getElementById("password").value;
+
+            if (account === "" || password === "") {
+                alert("账号或密码不能为空");
+            }
+            else {
+                window.location.href = "../Pages/Page1.html";
+                console.log(password);
+                console.log(account);
+            }
+        }
+
+        document.getElementById("login").onclick = function () {
+            CheckInput();
+        }
+    </script>
+</body>

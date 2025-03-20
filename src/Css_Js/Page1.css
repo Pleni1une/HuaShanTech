@@ -1,0 +1,39 @@
+.Image1 img {
+    margin-top: 44px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.main {
+    background-color: #F4F4F7;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.mainblock {
+    display: block;
+    background-color: white;
+    height: auto;
+    margin-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.mainicon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maintext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.mainicon img {
+    margin-top: 15px;
+    width: 12%;
+}
