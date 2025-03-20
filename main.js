@@ -20,7 +20,6 @@ function createWindow() {
     
     mainWindow.setMenu(null)
 
-    icon: path.join(__dirname, './src/Resources/icon.ico')
 }
 
 app.whenReady().then(createWindow)
