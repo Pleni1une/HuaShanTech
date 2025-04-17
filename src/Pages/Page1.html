@@ -8,11 +8,6 @@
     <link rel="shortcut icon" href="../Resource/icon.png">
     <link rel="stylesheet" href="../Css_Js/Page1.css">
     <link rel="stylesheet" href="../Css_Js/Header_And_Footer.css">
-
-    <script type="text/javascript">
-        console.log("Hello World")
-    </script>
-
 </head>
 
 <body>
@@ -20,7 +15,7 @@
         小滴服务
     </div>
     <div class="Image1">
-        <img src="../Resource/banner1.png">
+        <img id="Banner1" src="../Resource/banner1.png">
     </div>
 
     <div class="PageFooter">
@@ -117,6 +112,17 @@
         </div>
     </div>
 
+    <script>
+        var BannerNum = 1;
+        setInterval(() => {
+            BannerNum++;
+            if (BannerNum > 4) {
+                BannerNum = 1;
+            }
+            img = document.getElementById("Banner1");
+            img.src = "../Resource/banner" + BannerNum + ".png";
+        }, 3000)
+    </script>
 </body>
 
 </html>

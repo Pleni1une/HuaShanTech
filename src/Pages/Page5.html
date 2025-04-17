@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="../Resource/icon.png">
     <link rel="stylesheet" href="../Css_Js/Page5.css">
     <link rel="stylesheet" href="../Css_Js/Header_And_Footer.css">
-
 </head>
 
 <body>
@@ -19,7 +18,7 @@
         <img src="../Resource/banner5.png">
         <div class="LoginGUI">
             <img src="../Resource/head.png" alt="">
-            <div class="LoginText">华杉科技</div>
+            <div id="LoginText">Null</div>
             <button id="LoginButton">退出登录</button>
         </div>
     </div>
@@ -118,8 +117,26 @@
     </div>
 
     <script>
+        //获取用户名cookie
+        function getCookie() {
+            const cookies = document.cookie.split("; ");
+            for (let i = 0; i < cookies.length; i++) {
+                const [name, value] = cookies[i].split("=");
+                if (name === "account") {
+                    return value;
+                    //console.log(value); // 输出 "example"
+                    break;
+                }
+            }
+        }
+        Account = getCookie();
+        
         document.getElementById("LoginButton").onclick = function () {
             window.location.href = "../Pages/Login.html"
         }
+
+        Username = document.getElementById("LoginText")
+        Username.innerHTML = Account;
+
     </script>
 </body>
